@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+.DS_Store
+raw_extracted_jobs.json

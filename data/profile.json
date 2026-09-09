@@ -1,0 +1,165 @@
+{
+  "name": "Sameh Iskander",
+
+  "experienceYears": 22,
+
+  "education": [
+    "MBA — Project Management",
+    "BSc Computer Science & Information Technology"
+  ],
+
+  "targetCompensation": {
+    "minimum": 100000,
+    "target": 170000,
+    "currency": "USD"
+  },
+
+  "relocation": true,
+
+  "priorityLocations": [
+    "Pennsylvania",
+    "Virginia",
+    "Washington DC",
+    "North Carolina"
+  ],
+
+  "secondaryLocations": [
+    "Maryland",
+    "New Jersey",
+    "New York",
+    "Delaware",
+    "Georgia",
+    "Texas",
+    "Florida"
+  ],
+
+  "remoteAllowed": true,
+
+  "targetRoles": [
+    "Technical Project Manager",
+    "Senior Technical Project Manager",
+    "Technical Program Manager",
+    "Senior Technical Program Manager",
+    "IT Program Manager",
+    "Senior IT Program Manager",
+    "IT Service Delivery Manager",
+    "Senior IT Service Delivery Manager",
+    "IT Service Management Manager",
+    "ITSM Manager",
+    "IT Operations Manager",
+    "Senior IT Operations Manager",
+    "Infrastructure Project Manager",
+    "Senior Infrastructure Project Manager",
+    "IT Project Manager",
+    "Senior IT Project Manager",
+    "Program Manager — Infrastructure",
+    "Program Manager — IT Operations",
+    "Service Management Lead",
+    "IT Service Management Lead",
+    "PMO Manager",
+    "Senior PMO Manager",
+    "PMO Director",
+    "IT PMO Manager",
+    "IT Delivery Manager",
+    "Technical Delivery Manager",
+    "Senior IT Delivery Manager"
+  ],
+
+  "adjacentRoles": [
+    "Infrastructure Program Manager",
+    "Cloud Program Manager",
+    "IT Transformation Program Manager",
+    "Technology Program Manager",
+    "IT Portfolio Manager",
+    "Service Delivery Lead",
+    "IT Operations Lead",
+    "Technology Delivery Lead",
+    "ITSM Consultant",
+    "ServiceNow Project Manager",
+    "ServiceNow Program Manager",
+    "Enterprise Project Manager",
+    "Enterprise Program Manager"
+  ],
+
+  "negativeFilterRoles": [
+    "Linux Administrator",
+    "Network Engineer",
+    "Cloud Engineer",
+    "System Administrator",
+    "DevOps Engineer",
+    "Software Engineer"
+  ],
+
+  "coreStrengths": [
+    "IT Project Management",
+    "Technical Project Management",
+    "Program Management",
+    "IT Service Delivery",
+    "IT Operations",
+    "ITSM",
+    "ServiceNow Knowledge Management",
+    "Infrastructure",
+    "Cloud",
+    "AWS",
+    "Azure",
+    "Linux",
+    "Windows",
+    "Data Center",
+    "VMware",
+    "Nutanix",
+    "Risk Management",
+    "Agile",
+    "PMO",
+    "ITIL",
+    "COBIT",
+    "ISO 20000",
+    "Governance",
+    "Change Management",
+    "Release Management",
+    "CMDB",
+    "Cloud Migration",
+    "Vendor/Recruiter Management",
+    "Cross-Functional Leadership"
+  ],
+
+  "certifications": [
+    "PMI-ACP",
+    "PMI-RMP"
+  ],
+
+  "achievements": [
+    "40+ complex projects delivered on time and within budget",
+    "~15% project efficiency improvement",
+    "~10% project cost reduction",
+    "Led cross-functional teams of 12–15+",
+    "~18% operational cost reduction through cloud migration strategy",
+    "Large-scale infrastructure and messaging environment experience",
+    "Enterprise infrastructure and data center experience"
+  ],
+
+  "matchScoreModel": {
+    "roleAlignment": 30,
+    "experienceAlignment": 20,
+    "industryTechnicalAlignment": 15,
+    "leadership": 10,
+    "certificationsMethodology": 10,
+    "compensation": 10,
+    "geographicFit": 5
+  },
+
+  "priorityBands": {
+    "P1": "85-100",
+    "P2": "75-84",
+    "P3": "65-74",
+    "P4": "below 65 (do not normally add)"
+  },
+
+  "recencyPreference": [
+    "Posted today",
+    "Posted within 24 hours",
+    "Posted within 3 days",
+    "Posted within 7 days"
+  ],
+
+  "dailyTargetVolume": "5-15 high-quality opportunities per day when available"
+}

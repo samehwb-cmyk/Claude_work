@@ -1,0 +1,55 @@
+name: Daily Job Search
+
+on:
+  schedule:
+    # 11:00 UTC ≈ 6-7am US Eastern, once per day.
+    - cron: "0 11 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  id-token: write
+
+concurrency:
+  group: daily-job-search
+  cancel-in-progress: false
+
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+
+      - name: Setup git identity
+        run: |
+          git config --global user.email "claude[bot]@users.noreply.github.com"
+          git config --global user.name "claude[bot]"
+
+      - name: Run daily job search with Claude Code
+        uses: anthropics/claude-code-action@v1
+        with:
+          prompt: |
+            Follow prompts/daily-job-search.md exactly, from step 0 through
+            step 7. Read data/profile.json and data/jobs.json first, then
+            search for new opportunities, score and deduplicate them, and
+            append only genuinely new "scout" records to data/jobs.json.
+
+            Run `python3 scripts/validate_jobs.py` and
+            `python3 scripts/deduplicate_jobs.py` before finishing, per the
+            prompt's step 6. Only commit and push
+            (`git add data/jobs.json && git commit -m "jobs: add N new
+            opportunities $(date +%F)" && git push`) if
+            `git diff --quiet data/jobs.json` reports changes. If no
+            genuinely new jobs were found, make no commit at all.
+
+            Never modify the status of an existing job, never touch any
+            file other than data/jobs.json, and never fabricate a job,
+            salary, URL, or recruiter. Print the daily report described in
+            step 7 to the log before finishing.
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          claude_args: |
+            --allowedTools "Read,Glob,Grep,WebSearch,WebFetch,Edit,Write,Bash(git:*),Bash(python3:*),Bash(date:*)"

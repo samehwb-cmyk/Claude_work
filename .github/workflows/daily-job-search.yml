@@ -51,5 +51,6 @@ jobs:
             salary, URL, or recruiter. Print the daily report described in
             step 7 to the log before finishing.
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          show_full_output: true
           claude_args: |
             --allowedTools "Read,Glob,Grep,WebSearch,WebFetch,Edit,Write,Bash(git:*),Bash(python3:*),Bash(date:*)"
